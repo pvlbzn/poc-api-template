@@ -1,6 +1,10 @@
 # Proof of Concept API Template
 
-> Not intended for production use, rather for fast prototyping and experementation.
+> [!NOTE] 
+> Not intended for production use. Use for rapind prototyping and experementation, with minimalistic dependencies and generic structure.
+
+
+## Structure
 
 File tree:
 
@@ -45,6 +49,7 @@ TOML                             1              4              0             19
 YAML                             1              0              0             13
 ```
 
+
 ## Commands
 
 ```shell
@@ -54,3 +59,13 @@ poetry install
 # Run
 poetry run app
 ```
+
+
+## Dependencies
+
+Minimalistic set of dependencies.
+
+* FastAPI
+* Asyncpg
+* Pydantic
+* Uvicorn
