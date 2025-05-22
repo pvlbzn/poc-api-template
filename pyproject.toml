@@ -6,7 +6,6 @@ authors = [{ name = "Pavel Bazin", email = "pvlbzn@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "openai (>=1.80.0,<2.0.0)",
     "fastapi (>=0.115.12,<0.116.0)",
     "pydantic (>=2.11.4,<3.0.0)",
     "uvicorn (>=0.34.2,<0.35.0)",
