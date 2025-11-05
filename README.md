@@ -33,7 +33,6 @@ File tree:
 │   ├── services
 │   └── tests
 ├── docker-compose.yml
-├── poetry.lock
 └── pyproject.toml
 ```
 
@@ -44,9 +43,12 @@ File tree:
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Python                           7             31              0             65
-Markdown                         1              2              0             30
-TOML                             1              4              0             19
+Markdown                         1             15              0             55
+TOML                             1              6              0             22
 YAML                             1              0              0             13
+-------------------------------------------------------------------------------
+SUM:                            10             52              0            155
+-------------------------------------------------------------------------------
 ```
 
 
@@ -54,10 +56,10 @@ YAML                             1              0              0             13
 
 ```shell
 # Install the app and its dependencies
-poetry install
+uv sync
 
 # Run
-poetry run app
+uv run dev
 ```
 
 
@@ -69,3 +71,4 @@ Minimalistic set of dependencies.
 * Asyncpg
 * Pydantic
 * Uvicorn
+* Ruff
